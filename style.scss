@@ -2,3 +2,35 @@
 @import "global";
 @import "mixin";
 @import "veraibles";
+
+#header {
+  padding: 15px 0;
+  background: $fon;
+
+  .header {
+    @include space();
+
+    h4 {
+      font-size: 14px;
+      line-height: 150%;
+      color: #E5E5E5;
+    }
+
+    &--nav {
+      @include space();
+      width: 400px;
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+      }
+    }
+
+    &--register {
+      @include space();
+      width: 260px;
+    }
+  }
+
+}
